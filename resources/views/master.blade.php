@@ -35,11 +35,11 @@
               <li class="active"><a href="#">Home</a></li>
               <li class=""><a href="#">Orders</a></li>
             </ul>
-            <form class="navbar-form navbar-left">
+            <form action="/search" class="navbar-form navbar-left">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" name="query" class="form-control search-box" placeholder="Search">
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Cart(0)</a></li> 
@@ -49,7 +49,7 @@
       </nav>
     @yield('content')
     <!-- footer -->
-    <div class="panel panel-default">
+    <div style="clear:both" class="panel panel-default">
       <div class="panel-body">
         Panel content
       </div>
@@ -60,6 +60,31 @@
     .custom-login{
         height: 500px;
         padding-top: 100px;
+    }
+    img.slider-img{
+      height: 400px !important;
+    }
+    .custom-product{
+      height: 600px;
+    }
+    .slider-text{
+      background-color: #35443585 !important;
+    }
+    .trending-image{
+      height: 100px;
+    }
+    .trending-item{
+      float: left;
+      width: 20%;
+    }
+    .trending-wrapper{
+      margin: 30px;
+    }
+    .detail-img{
+      height: 200px;
+    }
+    .search-box{
+      width: 500px !important;
     }
 </style>
 </html>
