@@ -3,9 +3,8 @@
 <div class="custom-product">
       <div class="col-sm-10">
         <div class="trending-wrapper">
-            <h4>Hasil Products</h4>
-            <a class="btn btn-success" href="ordernow">Order Now</a> <br><br>
-            @foreach ($products as $item)
+            <h4>My Orders</h4>
+            @foreach ($orders as $item)
             <div class=" row searched-item cart-list-devider">
               <div class="col-sm-3">
                 <a href="detail/{{ $item->id }}">
@@ -18,13 +17,9 @@
                       <h5>{{ $item->deskripsi }}</h5>
                     </div>
               </div>
-              <div class="col-sm-3">
-                <a href="/removecart/{{ $item->cart_id }}" class="btn btn-warning">Hapus dari Cart</a>
-              </div>
             </div>
             @endforeach
           </div>
-          <a class="btn btn-success" href="ordernow">Order Now</a> <br><br>
       </div>
 </div>
 @endsection
